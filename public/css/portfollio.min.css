@@ -1,0 +1,1 @@
+.introHeader::before{background-image:url("../assets/portfollio-header.webp")}.card__img{overflow:hidden}.card__img:hover{border:2px solid var(--secondary_hard);opacity:.8}.card__img img{transition:all .15s ease-out;height:100%;object-fit:cover}.card__img img:hover{transform:scale(1.13)}

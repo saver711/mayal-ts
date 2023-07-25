@@ -1,0 +1,36 @@
+$primary_hard: var(--primary_hard);
+$secondary_hard: var(--secondary_hard);
+$white_hard: var(--white_hard);
+$black_hard: var(--black_hard);
+// intro header
+.introHeader {
+  &::before {
+    background-image: url("../assets/portfollio-header.webp");
+  }
+}
+/* ---- grid ---- */
+.card__img {
+  overflow: hidden;
+  //height: 100%;
+  &:hover {
+    border: 2px solid $secondary_hard;
+    opacity: 0.8;
+  }
+
+  img {
+    &:hover {
+      transform: scale(1.13);
+    }
+
+    transition: all 0.15s ease-out;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+// .card {
+//   &:hover {
+//     transform: scale(1.1);
+//     z-index: 1 !important;
+//     border: 4px solid $secondary_hard;
+//   }
+// }

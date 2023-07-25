@@ -1,0 +1,168 @@
+$primary_hard: var(--primary_hard);
+$secondary_hard: var(--secondary_hard);
+$white_hard: var(--white_hard);
+$black_hard: var(--black_hard);
+$grey_color: var(--grey_color);
+
+/* Style the video: 100% width and height to cover the entire window */
+
+@mixin cover($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// header
+#headerSwiper {
+  height: 100dvh;
+  position: relative;
+}
+.video-intro {
+  max-width: 100%;
+  //height: 10rem;
+}
+#myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// about us
+.about__text {
+  background-image: url("../assets/worker.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 14rem;
+  h1 {
+    font-weight: bold;
+  }
+}
+.about__assets--mainImg {
+  position: relative;
+  z-index: 1;
+}
+.about__miniImg {
+  position: absolute;
+  border: 7px solid $white_hard;
+  border-radius: 3px;
+  z-index: 3;
+  bottom: -10rem;
+  left: -7rem;
+  width: 20rem;
+  height: 20rem;
+
+  img {
+    object-fit: cover;
+  }
+}
+.about__dots {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: -5rem;
+  right: -5rem;
+  z-index: -1;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+// SERVICES
+#servicesSwiper {
+  padding: 2rem 0.5rem;
+
+  .swiper-slide{
+    height: auto;
+  }
+}
+
+//contact us
+.contactInfo {
+  font-size: 15px;
+
+  text-align: center;
+  div {
+    margin: auto;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  &__logo {
+    width: 20%;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+  }
+  &__links {
+    &--linkSocial {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $primary_hard;
+      color: $primary_hard;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & + & {
+        margin-left: 0.4rem;
+      }
+      &:hover {
+        cursor: pointer;
+        border-color: $secondary_hard;
+        & i {
+          color: $secondary_hard;
+        }
+      }
+    }
+  }
+}
+
+.contactForm,
+.contactInfo {
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.contactForm {
+  label {
+    color: $primary_hard;
+    font-weight: bold;
+  }
+
+  input,
+  textarea,
+  input:focus,
+  textarea:focus {
+    border: none;
+    background-color: rgba(124, 124, 124, 0.1);
+    outline: none;
+  }
+  input:focus,
+  textarea:focus {
+    color: $grey_color;
+    box-shadow: 0 0 0 0.1rem $primary_hard;
+  }
+  textarea {
+    height: 90%;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 0.8rem;
+    color: $grey_color;
+  }
+}
+
+@media (max-width: 578px) {
+  .contactInfo {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .about__dots {
+    bottom: -5rem;
+    top: unset;
+  }
+}

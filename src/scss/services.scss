@@ -1,0 +1,12 @@
+$primary_hard: var(--primary_hard);
+$secondary_hard: var(--secondary_hard);
+$white_hard: var(--white_hard);
+$black_hard: var(--black_hard);
+$grey_color: var(--grey_color);
+
+// intro header
+.introHeader {
+  &::before {
+    background-image: url("../assets/header-services.webp");
+  }
+}

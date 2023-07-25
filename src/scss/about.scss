@@ -1,0 +1,233 @@
+$primary_hard: var(--primary_hard);
+$secondary_hard: var(--secondary_hard);
+$white_hard: var(--white_hard);
+$black_hard: var(--black_hard);
+$grey_color: var(--grey_color);
+// intro header
+.introHeader {
+  &::before {
+    background-image: url("../assets/about-header.webp");
+  }
+}
+// about us
+.about__text {
+  background-image: url("../assets/worker.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 14rem;
+  h1 {
+    font-weight: bold;
+  }
+}
+.about__assets--mainImg {
+  position: relative;
+  z-index: 1;
+}
+.about__miniImg {
+  position: absolute;
+  border: 7px solid $white_hard;
+  border-radius: 3px;
+  z-index: 3;
+
+  bottom: -10rem;
+  left: -7rem;
+
+  width: 20rem;
+  height: 20rem;
+
+  img {
+    object-fit: cover;
+  }
+}
+.about__dots {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+
+  top: -5rem;
+  right: -5rem;
+  z-index: -1;
+
+  img {
+    object-fit: cover;
+  }
+}
+//history
+.historyText {
+  background-image: url("../assets/icon-history.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 14rem;
+}
+.history__assets--images {
+  position: relative;
+  z-index: 1;
+}
+.history__imgsub {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 25% 0%);
+}
+.history__dots {
+  position: absolute;
+
+  &--bottom {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    bottom: 0;
+    right: -5rem;
+    transform: translateY(50%);
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+    }
+  }
+  &--top {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    top: 0;
+    left: -5rem;
+    transform: translateY(-50%);
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+//vision
+.message__shapes {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  &::after {
+    content: "";
+    background: #e9e9e9;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    height: 5rem;
+    width: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+.message__icon {
+  position: relative;
+  background: $primary_hard;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  height: 8rem;
+  width: 10rem;
+  margin: auto;
+
+  &:hover {
+    background: $secondary_hard;
+  }
+
+  i {
+    position: absolute;
+    right: 40%;
+    transform: translateY(5%);
+    color: $white_hard;
+  }
+}
+
+.successPartners {
+  &__img {
+    padding: 1.3rem;
+
+    img {
+      height: auto;
+    }
+  }
+}
+//founderAndMangerWords
+.wordReview {
+  border-radius: 20px;
+  font-size: 1rem;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.wordReview_title {
+  &--icon {
+    border-radius: 50%;
+    border: 2px solid $primary_hard;
+    width: 4rem;
+    height: 4rem;
+    //padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    &:hover {
+      border-color: $secondary_hard;
+    }
+    div {
+      width: 3.3rem;
+      height: 3.3rem;
+      background-color: $primary_hard;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $secondary_hard;
+      }
+      i {
+        color: $white_hard;
+      }
+    }
+  }
+
+  h5 {
+    font-weight: 900;
+  }
+}
+//documnents
+.card__img {
+  overflow: hidden;
+  height: 100%;
+  &:hover {
+    border: 2px solid $secondary_hard;
+    opacity: 0.8;
+  }
+
+  img {
+    &:hover {
+      transform: scale(1.13);
+    }
+
+    transition: all 0.15s ease-out;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#partnersSwiper{
+  .swiper-slide{
+    height: auto;
+  }
+}
+
+//MEDAI
+@media (max-width: 767px) {
+  .about__dots {
+    bottom: -5rem;
+    top: unset;
+  }
+}
+// @media (max-width: 787px) {
+//   .wordReview_title {
+//     width: 70%;
+//   }
+// }
+// @media (min-width: 789px) and (max-width: 1200px) {
+//   .wordReview_title {
+//     width: 90%;
+//   }
+// }

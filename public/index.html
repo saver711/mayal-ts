@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <title>ميال</title>
+
+    <!-- >>>>>>>> SHARED -->
+    <!-- Cairo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="./css/aos.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Shared styles-->
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <link rel="stylesheet" href="./css/home.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+     <!-- LTR style -->
+    <!-- <link rel="stylesheet" href="./css/ltr.min.css"> -->
+    <!-- ./ >>>>>>>> SHARED -->
+
+
+  </head>
+  <body>
+
+    <div class="content_wrapper">
+      <!-- main viewport -->
+      <!--nav bar-->
+      <!-- <nav id="navbar" class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img id="logo" src="assets/logo.webp" alt="logo-image"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar-default"
+            id="navbarCollapse"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >من نحن</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="services.html"
+                  >خدماتنا
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="portfolio.html"
+                  >اعمالنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="index.html#contact"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <!--nav bar-->
+
+      <header id="header" class="home-header">
+        <!-- 
+      Choose video or slider
+     -->
+
+        <!-- video intro -->
+        <!-- <div class="video-intro">
+      <video autoplay muted loop id="myVideo">
+        <source src="assets/videoIntro.mp4" type="video/mp4" />
+      </video>
+    </div> -->
+        <!-- ./video intro -->
+
+        <!--menu-->
+        <div id="navbar-container">
+          <div id="menu-close">
+            <i class="fa-sharp fa-solid fa-xmark fa-2xl"></i>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"
+                >من نحن</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="services.html"
+                >خدماتنا
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="portfolio.html"
+                >اعمالنا</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="contactUs"
+                aria-current="page"
+                href="index.html#contact"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="menu-open">
+          <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <!--/.menu-->
+
+        <!-- Slider -->
+        <div id="headerSwiper" class="swiper-container swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video autoplay muted loop id="myVideo">
+                <source src="assets/videoIntro.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <!-- <div class="swiper-slide">
+              <img src="assets/slider-1.webp" alt="slide-1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/slider-2.webp" alt="slide-2" />
+            </div> -->
+          </div>
+        </div>
+        <!-- ./Slider -->
+      </header>
+
+      <!--who we are-->
+      <section class="secPadd about" id="who-are-we">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <i class="fa-solid fa-bolt icon-title"></i>
+              <h1 class="sectionTitle">من نحن</h1>
+            </div>
+
+            <a class="btn" href="about.html">المزيد</a>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 about__text">
+              <h1 class="mb-5" data-aos="slide-left">اهلا بكم في ميال</h1>
+              <p data-aos="zoom-in">
+                نشــأت شــركة الميــال للمقــاولات بهــدف اعتــاء موقــع مرمــوق
+                فــي الســوق الســعودي ولتكــون شــركة رائــدة فــي مجــال
+                الأعمــال الكهربائيـة وخاصـة فـي مجـال نقـل الطاقـة و شـبكات
+                التوزيـع للجهـد المتوسـط والمخفـض وقـد عـزز مـن ذلـك التأهيـل
+                المبكـر لنـا مـع الشـركة السـعودية للكهربـاء بالعمـل كمقـاول
+                معتمـد لديهـا فـي مجـال أعمـال التوزيـع ونقـل الطاقـة . وسـاعد
+                الانتشـار الجغرافـي للشـركة فـي أنحـاء المملكـة فـي أن تأخـذ
+                الشـركة المكانـة المميـزة لهـا.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 about__assets">
+              <div class="about__assets--mainImg">
+                <img
+                  class="about__mainImg"
+                  src="assets/muertos-crew-8853536.webp"
+                  alt="image-who-1"
+                  data-aos="zoom-in"
+                />
+                <div class="about__miniImg" data-aos="zoom-in">
+                  <img src="assets/pexels-photo.webp" alt="image-who-2" />
+                </div>
+
+                <div class="about__dots" data-aos="zoom-in">
+                  <img src="./assets/dots.png" alt="dots" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--./who-are-we-->
+      <!--services-->
+      <section class="secPadd" id="services">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <i class="fa-solid fa-bolt icon-title"></i>
+              <h1 class="sectionTitle">خدماتنا</h1>
+            </div>
+
+            <a class="btn" href="./services.html">المزيد</a>
+          </div>
+          <!-- Slider -->
+          <div class="swiper-container swiper" id="servicesSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img
+                        src="assets/drilling-work.webp"
+                        alt="service-image"
+                      />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-oil-well fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">أعمال الحفر</h4>
+                    <p class="serviceCard__info--text">
+                      أعمال الحفر وتمديد الكابات لشبكات توزيع الجهد المتوسط
+                      والمنخفض
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img
+                        src="assets/replacement-light.webp"
+                        alt="service-image"
+                      />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-dice-d20 fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">أعمال الاستبدال</h4>
+                    <p class="serviceCard__info--text">
+                      أعمال أستبدال اعمدة الانارة التالفة بالمدينة المنورة
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img
+                        src="assets/installation-stations.webp"
+                        alt="service-image"
+                      />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-brands fa-artstation fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">تشغيل المحطات</h4>
+                    <p class="serviceCard__info--text">
+                      حيث نقوم بأعمال تركيب وتشغيل المحطات.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img
+                        src="assets/maintenance-networks.webp"
+                        alt="service-image"
+                      />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-sharp fa-solid fa-plug-circle-bolt fa-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">اصلاح العدادات</h4>
+                    <p class="serviceCard__info--text">
+                      حيث نقوم بأعمال صيانة وإصاح المحطات والعدادات. .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img
+                        src="assets/repair-network.webp"
+                        alt="service-image"
+                      />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-sharp fa-solid fa-screwdriver-wrench fa-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">
+                      صيانة الشبكات الهوائية
+                    </h4>
+                    <p>حيث نقوم أعمال إنشاء وصيانة الشبكات الهوائية.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img src="assets/volt-energy.webp" alt="service-image" />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-bolt fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">ربط محطات الجهد</h4>
+                    <p class="serviceCard__info--text">
+                      حيث نقوم باعمال الربط بالنسبة محطات جهد K.V 110
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img src="assets/volt-improve.webp" alt="service-image" />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-tornado fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">
+                      اعمال تعزيز وتحسين الجهد
+                    </h4>
+                    <p class="serviceCard__info--text">
+                      حيث نقوم بأعمال تعزيز وتحسين شبكة الجهد المتوسط والمنخفض
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img src="assets/network.webp" alt="service-image" />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-screwdriver fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">
+                      اعمال تطوير الشبكات
+                    </h4>
+                    <p class="serviceCard__info--text">
+                      حيث نقوم بأعمال تطوير المخططات السكنية والصناعية
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img src="assets/networks2.webp" alt="service-image" />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-toolbox fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">اعمال التوريد</h4>
+                    <p class="serviceCard__info--text">
+                      أعمال توريد وتركيب شبكات الجهد المتوسط – المنخفض –
+                      العدادات الكهربائية لطلبات كبار المشتركين ء
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img src="assets/nework3.webp" alt="service-image" />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-circle-nodes fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">
+                      اعمال الربط للمحطات
+                    </h4>
+                    <p class="serviceCard__info--text">
+                      أعمال ربط المحطات 8310 – 8311بشبكة الجهد 132K.Vلمشروع
+                      الاسكان بمدينة الرياض
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img src="assets/network5.webp" alt="service-image" />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-link fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">اعمال ربط الخرج</h4>
+                    <p class="serviceCard__info--text">
+                      أعمال ربط اسكان الخرج 8730بشبكة الجهد 132K.Vبمنطقة الخرج
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="swiper-slide">
+                <div class="serviceCard">
+                  <div class="serviceCard__images">
+                    <div class="serviceCard__img">
+                      <img src="assets/network6.webp" alt="service-image" />
+                    </div>
+
+                    <div
+                      class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-sharp fa-solid fa-money-check fa-xl"></i>
+                    </div>
+                  </div>
+                  <div class="serviceCard__info">
+                    <h4 class="serviceCard__info--header">
+                      اعمال التوريد لجدة
+                    </h4>
+                    <p class="serviceCard__info--text">
+                      أعمال ربط محطات توليد بجدة K.V 110
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- ./Slider -->
+        </div>
+      </section>
+      <!--./services-->
+      <!--contacts-->
+
+      <section class="secPadd" id="contact">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <i class="fa-solid fa-bolt icon-title"></i>
+              <h1 class="sectionTitle">تواصل معنا</h1>
+            </div>
+          </div>
+          <div class="row g-3 justify-content-between contactContent">
+            <div class="col-12 col-md-6">
+              <div class="contactForm p-5" data-aos="zoom-in">
+                <form class="row g-3 needs-validation" novalidate="">
+                  <h2 class="sectionTitle mb-4">تواصل معنا</h2>
+
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">الإسم</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required=""
+                      placeholder="الإسم"
+                    />
+                    <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                    <!-- <div class="valid-feedback">✅</div> -->
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">الجوال</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      required=""
+                      placeholder="الجوال"
+                    />
+                    <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                    <!-- <div class="valid-feedback">✅</div> -->
+                  </div>
+                  <div class="col-12">
+                    <label title="subject" for="subject" class="form-label"
+                      >الموضوع</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      required=""
+                      placeholder="الموضوع"
+                    />
+                    <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                    <!-- <div class="valid-feedback">✅</div> -->
+                  </div>
+
+                  <div class="col-12 pb-4">
+                    <label title="details" for="details" class="form-label"
+                      >تفاصيل</label
+                    >
+                    <textarea
+                      name="details"
+                      class="form-control"
+                      id="details"
+                      placeholder="اكتب التفاصيل من فضلك...."
+                    ></textarea>
+                  </div>
+                  <!-- <div class="col-12">
+                <div class="form-check flex align-items-center">
+                    <input class="form-check-input float-none ms-2" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        أوافق علي سياسات المكتب
+                    </label>
+                    <div class="invalid-feedback">
+                        يجب ان تفعل هذا لاإختيار
+                    </div>
+                </div>
+              </div> -->
+                  <div class="col-12">
+                    <button class="btn contactForm__btn w-100" type="submit">
+                      إرسال
+                    </button>
+                  </div>
+                  <h6 class="text-success text-center fw-bold">
+                    ✅ تم الإرسال وسيتم التواصل معك في أقرب وقت
+                  </h6>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="contactInfo pt-5 pb-5" data-aos="zoom-in">
+                <div class="contactInfo__logo mb-5">
+                  <img src="assets/logo.webp" alt="image-logo" />
+                </div>
+                <div class="mb-3">
+                  <h4>عنوان العمل</h4>
+                  <span>
+                    النهضة وحدة رقم ٤- جدة - المملكة العربية السعودية
+                  </span>
+                </div>
+                <div class="mb-4">
+                  <h4>رقم التليفون</h4>
+                  <span> 0126946204 </span>
+                </div>
+                <div class="mb-4">
+                  <h4>الفاكس</h4>
+                  <span>0126946208</span>
+                </div>
+
+                <div
+                  class="contactInfo__links d-flex justify-content-center gap-2"
+                >
+                  <a
+                    href="#"
+                    class="contactInfo__links--linkSocial"
+                    aria-label="this page for facebook"
+                    ><i class="fa-brands fa-facebook-f fa-xl"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="contactInfo__links--linkSocial"
+                    aria-label="this page for instagram"
+                    ><i class="fa-brands fa-instagram fa-xl pr-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--./contacts-->
+
+      <!-- Google Map -->
+        <div style="position: relative; height: 500px;"><iframe style="height: 100%; width: 100%;" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%84%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+(Title)&amp;ie=UTF8&amp;t=k&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+      <!-- ./ Google Map -->
+      <!--footer-->
+      <footer class="secPadd container-fluid footer-container p-5">
+        <div class="row d-flex justify-content-between">
+          <div class="col-11 col-sm-6 col-md-3 col-lg-4">
+            <div class="logo-footer mb-5">
+              <img src="assets/logo.webp" alt="image-logo" />
+            </div>
+            <span>
+              الشــركة أعمالهــا فــي مدينــة جــدة وامتــدت فروعهــا إلــى
+              الريـاض والمدينـة المنـورة ومكـة المكرمـة وينبـع و مهـد الدهـب
+              ونسـعى للتوسـع فـي جميـع أنحـاء المملكـة
+            </span>
+          </div>
+          <div
+            class="col-11 col-sm-6 col-md-4 col-lg-3 text-center links-footer"
+          >
+            <ul>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+                <a href="index.html">الرئيسية</a>
+              </li>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+                <a href="about.html">من نحن</a>
+              </li>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+                <a href="services.html">خدماتنا</a>
+              </li>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+                <a href="portfolio.html"> اعمالنا</a>
+              </li>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+                <a href="index.html#contact"> تواصل معنا</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-11 col-md-4 col-lg-5 titles-footer">
+            <ul>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+                <span>النهضة وحدة رقم ٤- جدة - المملكة العربية السعودية </span>
+              </li>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-fax fa-sm"></i>
+                <span>0126946208</span>
+              </li>
+              <li class="mb-3">
+                <i class="fa-sharp fa-solid fa-phone fa-sm"></i>
+                <span>0126946204</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="splitter mt-5"></div>
+        <div class="centerText" id="rightsReserved">
+          الميال للمقاولات المحددوة. جميع الحقوق محفوظة
+        </div>
+      </footer>
+      <!--./footer-->
+
+      <!-- ./main viewport -->
+    </div>
+
+    <!-- Shared -->
+    <button title="btn-scroll" id="btn-scroll">
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+    <div id="preloader">
+      <div id="loader">
+        <div class="loader">
+          <div class="bolt one">
+            <div class="other"></div>
+          </div>
+          <div class="bolt two">
+            <div class="other"></div>
+          </div>
+          <div class="bolt three">
+            <div class="other"></div>
+          </div>
+          تحميل
+        </div>
+      </div>
+    </div>
+    <!-- ./Shared -->
+
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- >>>>>>>>>>>>>>> SCRIPTS -->
+    <!--  Shared -->
+    <!-- Bootstrap -->
+    <script type="module" defer src="/dist/bootstrap.js"></script>
+    <script type="module" defer src="/dist/main.js"></script>
+    <!-- ./ Shared -->
+
+
+    <script type="module" defer src="/dist/home.js"></script>
+  </body>
+</html>
