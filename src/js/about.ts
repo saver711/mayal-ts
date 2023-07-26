@@ -1,12 +1,12 @@
 import Swiper from "swiper";
 import { sharedSwiperOptions } from "./helpers";
-import { Navigation, Parallax } from 'swiper/modules';
+import { Navigation, Parallax, Autoplay } from 'swiper/modules';
 // CONSTANTS
 const maxParagraphLength = 600;
 
 document.addEventListener("DOMContentLoaded", () => {
   //  swiper for success partners
-  Swiper.use([Navigation, Parallax]);
+  Swiper.use([Navigation, Parallax, Autoplay]);
   new Swiper("#partnersSwiper", {
     ...sharedSwiperOptions,
     observer: true,

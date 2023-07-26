@@ -12,6 +12,15 @@ export default {
         ...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
       },
     ],
+    [
+      '@snowpack/plugin-sass',
+      {
+        compilerOptions: {
+          style: 'compressed',
+          sourceMap: false,
+        },
+      },
+    ],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -30,4 +39,9 @@ export default {
   buildOptions: {
     /* ... */
   },
+  exclude: [
+    '**/node_modules/**/*',
+    '**/__tests__/*',
+    '**/*.@(spec|test).@(js|mjs)',
+  ],
 };

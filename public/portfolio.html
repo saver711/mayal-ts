@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.png" />
+    <link rel="icon" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -26,19 +26,19 @@
     />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/css/bootstrap.css" />
 
     <!-- Shared styles-->
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
 
-    <link rel="stylesheet" href="./css/portfollio.min.css" />
+    <link rel="stylesheet" href="./dist/css/portfollio.css" />
 
     <!-- LTR style -->
-    <!-- <link rel="stylesheet" href="./css/ltr.min.css"> -->
+    <!-- <link rel="stylesheet" href="./dist/css/ltr.css"> -->
     <!-- ./ >>>>>>>> SHARED -->
   </head>
   <body>
-   <!-- main viewport -->
+    <!-- main viewport -->
     <div class="content_wrapper">
       <!--menu-->
       <div id="navbar-container">
@@ -108,141 +108,141 @@
 
           <!-- in LTR => just remove "isOriginLeft": false -->
           <div
-            class="row"
-            data-masonry='{"percentPosition": true, "isOriginLeft": false }'
+            class="grid"
+            data-masonry='{ "itemSelector": ".grid-item", "isOriginLeft": false, "columnWidth": 350, "gutter": 15, "isFitWidth": true}'
           >
-            <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="grid-item">
               <div class="card">
                 <div class="card__img">
-                  <img src="assets/15.webp" alt="grid-image" />
+                  <img src="./dist/assets/15.webp" alt="grid-image" />
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="grid-item">
               <div class="card">
                 <div class="card__img">
-                  <img src="assets/17.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/16.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/14.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/18.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/20.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/21.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/22.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/23.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/25.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/27.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/28.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/26.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/29.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/32.webp" alt="grid-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card">
-                <div class="card__img">
-                  <img src="assets/31.webp" alt="grid-image" />
+                  <img src="./dist/assets/17.webp" alt="grid-image" />
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="grid-item">
               <div class="card">
                 <div class="card__img">
-                  <img src="assets/30.webp" alt="grid-image" />
+                  <img src="./dist/assets/16.webp" alt="grid-image" />
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="grid-item">
               <div class="card">
                 <div class="card__img">
-                  <img src="assets/33.webp" alt="grid-image" />
+                  <img src="./dist/assets/14.webp" alt="grid-image" />
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="grid-item">
               <div class="card">
                 <div class="card__img">
-                  <img src="assets/34.webp" alt="grid-image" />
+                  <img src="./dist/assets/18.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/20.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/21.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/22.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/23.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/25.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/27.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/28.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/26.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/29.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/32.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/31.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/30.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/33.webp" alt="grid-image" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./dist/assets/34.webp" alt="grid-image" />
                 </div>
               </div>
             </div>
@@ -255,7 +255,7 @@
         <div class="row d-flex justify-content-between">
           <div class="col-11 col-sm-6 col-md-3 col-lg-4">
             <div class="logo-footer mb-5">
-              <img src="assets/logo.webp" alt="image-logo" />
+              <img src="./dist/assets/logo.webp" alt="image-logo" />
             </div>
             <span>
               الشــركة أعمالهــا فــي مدينــة جــدة وامتــدت فروعهــا إلــى
@@ -339,10 +339,9 @@
     <!-- >>>>>>>>>>>>>>> SCRIPTS -->
     <!--  Shared -->
     <!-- Bootstrap -->
-    <script type="module" defer src="/dist/bootstrap.js"></script>
-    <script type="module" defer src="/dist/masonry.min.js"></script>
-    <script type="module" defer src="/dist/main.js"></script>
+    <script type="module" defer src="./dist/js/bootstrap.js"></script>
+    <script type="module" defer src="./dist/js/masonry.js"></script>
+    <script type="module" defer src="./dist/js/main.js"></script>
     <!-- ./ Shared -->
-
   </body>
 </html>

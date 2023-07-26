@@ -1,6 +1,6 @@
 import { sharedSwiperOptions } from './helpers';
 import Swiper from 'swiper';
-import {Navigation, Parallax} from 'swiper/modules';
+import {Navigation, Parallax, Autoplay} from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   // >>> header Swiper init
@@ -9,12 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     effect: 'fade',
   });
 
-  Swiper.use([Navigation, Parallax]);
-  const servicesSwiper =  new Swiper('#servicesSwiper', {
+  Swiper.use([Navigation, Parallax, Autoplay]);
+  new Swiper('#servicesSwiper', {
     ...sharedSwiperOptions,
     observer: true,
     observeParents: true,
-    autoplay: false,
     spaceBetween: 30,
     slidesPerView: 3,
     breakpoints: {

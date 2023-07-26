@@ -13,6 +13,7 @@
     "swiper": "^10.0.4"
   },
   "devDependencies": {
+    "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@types/aos": "^3.0.4",
     "@types/snowpack-env": "^2.3.3",
