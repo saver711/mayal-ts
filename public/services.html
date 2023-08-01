@@ -38,41 +38,46 @@
     <!-- ./ >>>>>>>> SHARED -->
   </head>
   <body>
-   <div class="content_wrapper">
+    <div class="content_wrapper">
       <!--menu-->
       <div id="navbar-container">
         <div id="menu-close">
           <i class="fa-sharp fa-solid fa-xmark fa-2xl"></i>
         </div>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html"
-              >الرئيسية</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./about.html"
-              >من نحن</a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">خدماتنا </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./portfolio.html"
-              >اعمالنا</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="contactUs"
-              aria-current="page"
-              href="index.html#contact"
-              >تواصل معنا</a
-            >
-          </li>
-        </ul>
+        <div class="navbar__content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html"
+                >من نحن</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">خدماتنا </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./portfolio.html"
+                >اعمالنا</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="contactUs"
+                aria-current="page"
+                href="index.html#contact"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
+          <div class="menuBackground">
+            <img src="./dist/assets/menuBack.png" alt="menu-back-image" />
+          </div>
+        </div>
       </div>
       <div id="menu-open">
         <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
@@ -108,9 +113,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
-                    <img src="./dist/assets/drilling-work.webp" alt="service-image" />
-                  </div>
+                  <!-- <div class="serviceCard__img">
+                    <img
+                      src="./dist/assets/drilling-work.webp"
+                      alt="service-image"
+                    />
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -130,12 +138,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
+                  <!-- <div class="serviceCard__img">
                     <img
                       src="./dist/assets/replacement-light.webp"
                       alt="service-image"
                     />
-                  </div>
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -155,12 +163,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
+                  <!-- <div class="serviceCard__img">
                     <img
                       src="./dist/assets/installation-stations.webp"
                       alt="service-image"
                     />
-                  </div>
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -179,12 +187,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
+                  <!-- <div class="serviceCard__img">
                     <img
                       src="./dist/assets/maintenance-networks.webp"
                       alt="service-image"
                     />
-                  </div>
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -203,9 +211,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
-                    <img src="./dist/assets/repair-network.webp" alt="service-image" />
-                  </div>
+                  <!-- <div class="serviceCard__img">
+                    <img
+                      src="./dist/assets/repair-network.webp"
+                      alt="service-image"
+                    />
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -219,16 +230,21 @@
                   <h4 class="serviceCard__info--header">
                     صيانة الشبكات الهوائية
                   </h4>
-                  <p>حيث نقوم أعمال إنشاء وصيانة الشبكات الهوائية.</p>
+                  <p class="serviceCard__info--text">
+                    حيث نقوم أعمال إنشاء وصيانة الشبكات الهوائية.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
-                    <img src="./dist/assets/volt-energy.webp" alt="service-image" />
-                  </div>
+                  <!-- <div class="serviceCard__img">
+                    <img
+                      src="./dist/assets/volt-energy.webp"
+                      alt="service-image"
+                    />
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -247,9 +263,9 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
+                  <!-- <div class="serviceCard__img">
                     <img src="./dist/assets/nework3.webp" alt="service-image" />
-                  </div>
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -269,9 +285,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
-                    <img src="./dist/assets/network5.webp" alt="service-image" />
-                  </div>
+                  <!-- <div class="serviceCard__img">
+                    <img
+                      src="./dist/assets/network5.webp"
+                      alt="service-image"
+                    />
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -290,9 +309,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
-                    <img src="./dist/assets/network6.webp" alt="service-image" />
-                  </div>
+                  <!-- <div class="serviceCard__img">
+                    <img
+                      src="./dist/assets/network6.webp"
+                      alt="service-image"
+                    />
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -311,9 +333,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
-                    <img src="./dist/assets/volt-improve.webp" alt="service-image" />
-                  </div>
+                  <!-- <div class="serviceCard__img">
+                    <img
+                      src="./dist/assets/volt-improve.webp"
+                      alt="service-image"
+                    />
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -334,9 +359,9 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
+                  <!-- <div class="serviceCard__img">
                     <img src="./dist/assets/network.webp" alt="service-image" />
-                  </div>
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -355,9 +380,12 @@
             <div class="col-12 col-sm-6 col-md-4">
               <div class="serviceCard">
                 <div class="serviceCard__images">
-                  <div class="serviceCard__img">
-                    <img src="./dist/assets/networks2.webp" alt="service-image" />
-                  </div>
+                  <!-- <div class="serviceCard__img">
+                    <img
+                      src="./dist/assets/networks2.webp"
+                      alt="service-image"
+                    />
+                  </div> -->
 
                   <div
                     class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
@@ -398,32 +426,32 @@
             </span>
           </div>
           <div
-            class="col-11 col-sm-6 col-md-4 col-lg-3 text-center links-footer"
+            class="col-11 col-sm-6 col-md-4 col-lg-4 text-center links-footer"
           >
             <ul>
               <li class="mb-3">
                 <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="index.html">الرئيسية</a>
+                <span class="fw-bold">الفروع</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="about.html">من نحن</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>الرياض : 011/8100107</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="services.html">خدماتنا</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>المدينة : 014/8315997</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="portfolio.html"> اعمالنا</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>مهد الدهـب : 014/8315997</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="index.html#contact"> تواصل معنا</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>ينبع : 0598250503</span>
               </li>
             </ul>
           </div>
-          <div class="col-12 col-sm-11 col-md-4 col-lg-5 titles-footer">
+          <div class="col-12 col-sm-11 col-md-4 col-lg-4 titles-footer">
             <ul>
               <li class="mb-3">
                 <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
@@ -476,6 +504,5 @@
     <script type="module" defer src="./dist/js/bootstrap.js"></script>
     <script type="module" defer src="./dist/js/main.js"></script>
     <!-- ./ Shared -->
-
   </body>
 </html>

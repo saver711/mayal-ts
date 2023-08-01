@@ -6,12 +6,12 @@ $grey_color: var(--grey_color);
 // intro header
 .introHeader {
   &::before {
-    background-image: url("../assets/about-header.webp");
+    background-image: url('../assets/about-header.webp');
   }
 }
 // about us
 .about__text {
-  background-image: url("../assets/worker.png");
+  background-image: url('../assets/worker.png');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 14rem;
@@ -54,7 +54,7 @@ $grey_color: var(--grey_color);
 }
 //history
 .historyText {
-  background-image: url("../assets/icon-history.png");
+  background-image: url('../assets/icon-history.png');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 14rem;
@@ -102,7 +102,7 @@ $grey_color: var(--grey_color);
   width: 100%;
   z-index: 1;
   &::after {
-    content: "";
+    content: '';
     background: #e9e9e9;
     clip-path: polygon(100% 0, 0 0, 50% 100%);
     height: 5rem;
@@ -208,12 +208,24 @@ $grey_color: var(--grey_color);
   }
 }
 
-#partnersSwiper{
-  .swiper-slide{
+#partnersSwiper {
+  .swiper-slide {
     height: auto;
   }
 }
-
+//branches
+.branches {
+  p {
+    display: inline-block;
+    color: $primary_hard;
+  }
+  i {
+    color: $secondary_hard;
+  }
+  ul {
+    text-align: center;
+  }
+}
 //MEDAI
 @media (max-width: 767px) {
   .about__dots {

@@ -49,35 +49,40 @@
         <div id="menu-close">
           <i class="fa-sharp fa-solid fa-xmark fa-2xl"></i>
         </div>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html"
-              >الرئيسية</a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">من نحن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="services.html"
-              >خدماتنا
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="portfolio.html"
-              >اعمالنا</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="contactUs"
-              aria-current="page"
-              href="index.html#contact"
-              >تواصل معنا</a
-            >
-          </li>
-        </ul>
+        <div class="navbar__content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="services.html"
+                >خدماتنا
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="portfolio.html"
+                >اعمالنا</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="contactUs"
+                aria-current="page"
+                href="index.html#contact"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
+          <div class="menuBackground">
+            <img src="./dist/assets/menuBack.png" alt="menu-back-image" />
+          </div>
+        </div>
       </div>
       <div id="menu-open">
         <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
@@ -467,6 +472,68 @@
         </div>
       </section>
       <!--documents-->
+      <!--branches-->
+      <section class="secPadd branches">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <i class="fa-solid fa-bolt icon-title"></i>
+              <h1 class="sectionTitle">فروع الشركة</h1>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <ul>
+                <li class="mb-2 flex justify-content-between">
+                  <i class="fa-sharp fa-solid fa-location-crosshairs fa-lg"></i>
+                  <p class="fw-bold">الرياض</p>
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-fax fa-sm"></i>
+                  <p>011/8100107</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <ul>
+                <li class="mb-2 flex justify-content-between">
+                  <i class="fa-sharp fa-solid fa-location-crosshairs fa-lg"></i>
+                  <p class="fw-bold">المدينة</p>
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-fax fa-sm"></i>
+                  <p>014/8315997</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <ul>
+                <li class="mb-2 flex justify-content-between">
+                  <i class="fa-sharp fa-solid fa-location-crosshairs fa-lg"></i>
+                  <p class="fw-bold">مهد الدهب</p>
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-fax fa-sm"></i>
+                  <p>014/8315997</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <ul>
+                <li class="mb-2 flex justify-content-between">
+                  <i class="fa-sharp fa-solid fa-location-crosshairs fa-lg"></i>
+                  <p class="fw-bold">ينبع</p>
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-fax fa-sm"></i>
+                  <p>0598250503</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--branches-->
 
       <!-- main viewport -->
       <!-- Shared -->
@@ -484,32 +551,32 @@
             </span>
           </div>
           <div
-            class="col-11 col-sm-6 col-md-4 col-lg-3 text-center links-footer"
+            class="col-11 col-sm-6 col-md-4 col-lg-4 text-center links-footer"
           >
             <ul>
               <li class="mb-3">
                 <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="index.html">الرئيسية</a>
+                <span class="fw-bold">الفروع</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="about.html">من نحن</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>الرياض : 011/8100107</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="services.html">خدماتنا</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>المدينة : 014/8315997</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="portfolio.html"> اعمالنا</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>مهد الدهـب : 014/8315997</span>
               </li>
               <li class="mb-3">
-                <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-                <a href="index.html#contact"> تواصل معنا</a>
+                <i class="fa-sharp fa-solid fa-map-pin fa-sm"></i>
+                <span>ينبع : 0598250503</span>
               </li>
             </ul>
           </div>
-          <div class="col-12 col-sm-11 col-md-4 col-lg-5 titles-footer">
+          <div class="col-12 col-sm-11 col-md-4 col-lg-4 titles-footer">
             <ul>
               <li class="mb-3">
                 <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>

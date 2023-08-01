@@ -1,6 +1,6 @@
 import { sharedSwiperOptions } from './helpers';
 import Swiper from 'swiper';
-import {Navigation, Parallax, Autoplay} from 'swiper/modules';
+import { Navigation, Parallax, Autoplay } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   // >>> header Swiper init
@@ -32,6 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
-
-  
 });
