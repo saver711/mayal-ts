@@ -824,6 +824,32 @@ i.whatsapp {
     }
   }
 }
+// grid gallery
+.gallery__container {
+  flex-wrap: wrap;
+  padding: 0 0.25rem;
+  &--images {
+    padding: 0.4rem;
+  }
+}
+.card__img {
+  overflow: hidden;
+  width: 100%;
+  &:hover {
+    border: 2px solid $secondary_hard;
+    opacity: 0.8;
+  }
+  img {
+    transition: all 0.15s ease-out;
+    width: 100%;
+    object-fit: cover;
+    margin: 0.3rem 0;
+    vertical-align: middle;
+    &:hover {
+      transform: scale(1.13);
+    }
+  }
+}
 // FOOTER
 .footer-container {
   background-color: $primary_hard;
