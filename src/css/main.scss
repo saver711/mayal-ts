@@ -580,9 +580,24 @@ i.whatsapp {
   height: 100vh;
   position: fixed;
   z-index: 4;
-  background-color: $white_hard;
   width: 100%;
   right: 0;
+  background-color: $white_hard;
+
+  &::before {
+    content: '';
+    background-color: $white_hard;
+    background-image: url(../assets/menuBack.webp);
+    // background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .45;
+  }
   //position: relative;
   ul {
     text-align: center;
