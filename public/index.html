@@ -47,133 +47,87 @@
   </head>
   <body>
     <div class="content_wrapper">
-      <!-- main viewport -->
-      <!--nav bar-->
-      <!-- <nav id="navbar" class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img id="logo" src="./dist/assets/logo.webp" alt="logo-image"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse navbar-default"
-            id="navbarCollapse"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >الرئيسية</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html"
-                  >من نحن</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="services.html"
-                  >خدماتنا
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="portfolio.html"
-                  >اعمالنا</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="index.html#contact"
-                  >تواصل معنا</a
-                >
-              </li>
-            </ul>
-          </div>
+      <!--menu-->
+      <div id="navbar-container">
+        <div id="menu-close">
+          <i class="fa-sharp fa-solid fa-xmark fa-2xl"></i>
         </div>
-      </nav> -->
-      <!--nav bar-->
+        <div class="navbar__content">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"
+                >من نحن</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="services.html"
+                >خدماتنا
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="portfolio.html"
+                >اعمالنا</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="contactUs"
+                aria-current="page"
+                href="index.html#contact"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="menu-open">
+        <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+      </div>
+      <!--/.menu-->
 
       <header id="header" class="home-header">
-        <!-- 
-      Choose video or slider
-     -->
-
-        <!-- video intro -->
-        <!-- <div class="video-intro">
-      <video autoplay muted loop id="myVideo">
-        <source src="./dist/assets/videoIntro.mp4" type="video/mp4" />
-      </video>
-    </div> -->
-        <!-- ./video intro -->
-
-        <!--menu-->
-        <div id="navbar-container">
-          <div id="menu-close">
-            <i class="fa-sharp fa-solid fa-xmark fa-2xl"></i>
-          </div>
-          <div class="navbar__content">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html"
-                  >من نحن</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="services.html"
-                  >خدماتنا
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="portfolio.html"
-                  >اعمالنا</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="contactUs"
-                  aria-current="page"
-                  href="index.html#contact"
-                  >تواصل معنا</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div id="menu-open">
-          <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
-        </div>
-        <!--/.menu-->
-
         <!-- Slider -->
         <div id="headerSwiper" class="swiper-container swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <video autoplay muted loop id="myVideo">
                 <source src="./dist/assets/videoIntro.mp4" type="video/mp4" />
               </video>
-            </div>
-            <!-- <div class="swiper-slide">
-              <img src="./dist/assets/slider-1.webp" alt="slide-1" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./dist/assets/slider-2.webp" alt="slide-2" />
             </div> -->
+
+            <div class="swiper-slide">
+              <img src="./dist/assets/slider-2.webp" alt="work sample 1" />
+              <div class="slider-text">
+                <h1 class="slider-title">أعمال محطات الكهرباء</h1>
+                <!-- <h4 class="slider-sub-title">اتصل بنا لتعمل معنا</h4> -->
+              </div>
+            </div>
+            <!-- مجرد مثال اذا اردت استخدام صور مختلفه لمقاسات مختلفه -->
+            <div class="swiper-slide slide-2">
+              <picture>
+                <source
+                  media="(max-width:550px)"
+                  srcset="./dist/assets/slider-1.webp"
+                />
+                <!-- the fallback -->
+                <img src="./dist/assets/slider-1.webp" alt="work sample 2" />
+              </picture>
+
+              <div class="slider-text">
+                <h2 class="slider-title">كل ما يتعلق بأعمال الكهرباء</h2>
+              </div>
+            </div>
+            <div class="swiper-slide slide-3">
+              <img src="./dist/assets/slider-3.webp" alt="work sample 3" />
+              <div class="slider-text">
+                <h2 class="slider-title">أعمال القياسات</h2>
+              </div>
+            </div>
           </div>
         </div>
         <!-- ./Slider -->

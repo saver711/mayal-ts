@@ -1,15 +1,15 @@
 import { sharedSwiperOptions } from './helpers';
 import Swiper from 'swiper';
-import { Navigation, Parallax, Autoplay } from 'swiper/modules';
+import { Navigation, Parallax, Autoplay, EffectFade } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   // >>> header Swiper init
+  Swiper.use([Navigation, Parallax, Autoplay, EffectFade]);
   new Swiper('#headerSwiper', {
     ...sharedSwiperOptions,
     effect: 'fade',
   });
 
-  Swiper.use([Navigation, Parallax, Autoplay]);
   new Swiper('#servicesSwiper', {
     ...sharedSwiperOptions,
     observer: true,
