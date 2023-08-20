@@ -62,16 +62,13 @@ $grey_color: var(--grey_color);
 .history__assets--images {
   position: relative;
   z-index: 1;
-  img{
+  img {
     height: 100%;
-  object-fit: cover;
-
+    object-fit: cover;
   }
 }
 .history__imgsub {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 25% 0%);
-
-  
 }
 .history__dots {
   position: absolute;
@@ -200,7 +197,6 @@ $grey_color: var(--grey_color);
   overflow: hidden;
   height: 100%;
   &:hover {
-    border: 2px solid $secondary_hard;
     opacity: 0.8;
   }
 
