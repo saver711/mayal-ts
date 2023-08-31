@@ -8,6 +8,11 @@ $black_hard: var(--black_hard);
     background-image: url('../assets/portfollio-header.webp');
   }
 }
+.card__img {
+  img {
+    aspect-ratio: 1;
+  }
+}
 // /* ---- grid gallery ---- */
 // .gallery__container {
 //   flex-wrap: wrap;
