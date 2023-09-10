@@ -43,11 +43,9 @@ $grey_color: var(--grey_color);
   position: absolute;
   width: 10rem;
   height: 10rem;
-
   top: -5rem;
   right: -5rem;
   z-index: -1;
-
   img {
     object-fit: cover;
   }
@@ -234,6 +232,11 @@ $grey_color: var(--grey_color);
   .about__dots {
     bottom: -5rem;
     top: unset;
+  }
+  .history__dots {
+    &--top {
+      display: none;
+    }
   }
 }
 // @media (max-width: 787px) {
